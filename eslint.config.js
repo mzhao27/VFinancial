@@ -1,18 +1,27 @@
-const prettier = require("eslint-plugin-prettier");
+const eslintPluginPrettierRecommended = require("eslint-plugin-prettier/recommended");
+const react = require("eslint-plugin-react");
+const globals = require("globals");
 
 module.exports = [
   {
     files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
     languageOptions: {
-      ecmaVersion: 2021,
-      sourceType: "module",
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+      globals: {
+        ...globals.browser,
+      },
     },
     plugins: {
-      prettier,
+      eslintPluginPrettierRecommended,
+      react,
     },
     rules: {
-      "prettier/prettier": "error",
-      semi: ["warn", "always"],
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",
     },
   },
 ];
