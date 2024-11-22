@@ -2,4 +2,3 @@ plaid-python
 pymongo
 dnspython
 djangorestframework
-git-pylint-commit-hook
