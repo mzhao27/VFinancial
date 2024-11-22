@@ -1,0 +1,25 @@
+.cell {
+    background-color: #f0f8ff;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0.25rem;
+    text-align: center;
+    width: 24%;
+}
+
+.cell.cell-header {
+    background-color: #9dc8f2;
+}
+
+.cell.cell--highlighted {
+    background-color: #036fa1;
+    color: #fff;
+}
+
+th {
+    background: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+}

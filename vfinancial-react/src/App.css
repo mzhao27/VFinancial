@@ -1,0 +1,12 @@
+.app-title {
+  align-items: center;
+  background-color: #3d4048;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  margin: 0 0 30px;
+  padding: 20px;
+  text-align: center;
+}
