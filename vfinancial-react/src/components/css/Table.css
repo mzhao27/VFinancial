@@ -1,11 +1,10 @@
 .table-container {
-    border-collapse: collapse;
-    margin: auto;
-    position: relative;
-    width: 90%;
+  border-collapse: collapse;
+  color: #3d4048;
+  position: relative;
 }
 
 .data-container {
-    height: 850px;
-    overflow: scroll;
+  height: 850px;
+  overflow: scroll;
 }

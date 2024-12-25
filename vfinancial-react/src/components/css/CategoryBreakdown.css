@@ -1,8 +1,8 @@
-.category-breakdown-pie-chart {
-  margin: auto;
-  width: 90%;
+.category-breakdown-container {
+  margin-top: 50px;
 }
 
 .category-breakdown-total {
-  text-align: center;
+  color: #3d4048;
+  font-size: 32px;
 }

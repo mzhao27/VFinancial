@@ -10,7 +10,8 @@ from .serializers import TransactionSerializer
 
 
 def index(request):
-    return HttpResponse("Hello, you are viewing the transactions page")
+    template = loader.get_template("transactions-index.html")
+    return HttpResponse(template.render())
 
 def detail(request, year, month):
     year = int(year)
@@ -42,5 +43,5 @@ def detail(request, year, month):
             "total": float("{:.2f}".format(sum(category_breakdown.values())))
         }
     }
-    template = loader.get_template("transactions.html")
+    template = loader.get_template("transactions-detail.html")
     return HttpResponse(template.render(context, request))
